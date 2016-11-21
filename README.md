@@ -7,7 +7,7 @@ Currently the only way to run this is to modify application.properties with the 
 
 There's no integrity checks right now on the command so it will just run until it bombs out.
 
-I'm planning on adding support for JSON so that the obfuscate command can be built that way. Once it's out, the basic structure for a command is:
+Support for JSON input exists so that the obfuscate command can be built that way. The basic structure for a command is:
 ~~~~
 {
     schema: "schemaName"
@@ -27,6 +27,6 @@ I'm planning on adding support for JSON so that the obfuscate command can be bui
 }
 ~~~~
 
-**fakerStrategy** allows use to specify any faker data generation path. Currently faker methods that take input parameters are not supported but it would probably be simple to support a syntax like "address.streetAddress$true".
+**fakerStrategy** allows user to specify any faker data generation path. Currently faker methods that take input parameters are not supported but it would probably be simple to support a syntax like "address.streetAddress$true". See <https://github.com/DiUS/java-faker> for all available functions
 
 **strategy** will refer to an internal enumeration that can be expanded to include different datapoints
