@@ -33,9 +33,9 @@ dependencies {
 	compile "org.projectlombok:lombok:1.16.10"
 
 	compile 'com.github.javafaker:javafaker:0.11'
+	compile 'com.fasterxml.jackson.core:jackson-databind:2.8.2'
 
-	compile('org.springframework.boot:spring-boot-starter-jdbc')
-	runtime('org.springframework.boot:spring-boot-devtools')
-	runtime('mysql:mysql-connector-java')
-	testCompile('org.springframework.boot:spring-boot-starter-test')
+	compile 'org.springframework.boot:spring-boot-starter-jdbc'
+	runtime 'org.springframework.boot:spring-boot-devtools'
+	runtime 'mysql:mysql-connector-java'
 }

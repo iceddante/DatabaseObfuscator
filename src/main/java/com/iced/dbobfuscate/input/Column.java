@@ -1,7 +1,9 @@
 package com.iced.dbobfuscate.input;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.sql.Types;
 import java.util.function.Function;
@@ -11,6 +13,7 @@ import java.util.function.Function;
  */
 @Data
 @Builder
+@AllArgsConstructor
 public class Column {
 	String name;
 	Integer dataType;

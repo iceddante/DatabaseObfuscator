@@ -1,8 +1,6 @@
 package com.iced.dbobfuscate.input;
 
-import lombok.Builder;
-import lombok.Data;
-import lombok.Singular;
+import lombok.*;
 
 import java.util.List;
 
@@ -11,6 +9,7 @@ import java.util.List;
  */
 @Data
 @Builder
+@AllArgsConstructor
 public class Table {
 	String name;
 
