@@ -19,4 +19,5 @@ public class Column {
 	Integer dataType;
 	Strategy strategy;
 	String fakerStrategy;
+	String dataSet;
 }

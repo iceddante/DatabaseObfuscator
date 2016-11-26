@@ -21,6 +21,11 @@ Support for JSON input exists so that the obfuscate command can be built that wa
           {
             name: "accountNumber",
             strategy: "FINANCIAL_ACCOUNT"
+          },
+          {
+          	name: "comments",
+          	strategy: "DATA_SET",
+          	dataSet: "randomstrings"
           }
         ]
     }]
@@ -29,4 +34,4 @@ Support for JSON input exists so that the obfuscate command can be built that wa
 
 **fakerStrategy** allows user to specify any faker data generation path. Currently faker methods that take input parameters are not supported but it would probably be simple to support a syntax like "address.streetAddress$true". See <https://github.com/DiUS/java-faker> for all available functions
 
-**strategy** will refer to an internal enumeration that can be expanded to include different datapoints
+**strategy** will refer to an internal enumeration that can be expanded to include different datapoints. The **dataset** strategy allows the user to setup a dataset JSON dat file that contains text. One line from the file will be randomly selected
